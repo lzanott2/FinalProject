@@ -48,6 +48,7 @@ $(document).ready(function() {
         var text2 = $('<p>' + formData.email + '</p>');
         var text3 = $('<p>' + formData.checkbox + '</p>');
         var text4 = $('<p>' + formData.textarea + '</p>');
+        var text5 = $('<p>' + formData.select + '</p>');
 
         $('#results').empty();
 
@@ -55,6 +56,7 @@ $(document).ready(function() {
         $('#results').append(text2);
         $('#results').append(text3);
         $('#results').append(text4);
+        $('#results').append(text5);
     });
 
 });
