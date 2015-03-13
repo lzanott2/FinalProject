@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>L. Zanotti - Home Page</title>
+      <title>Home Page</title>
       <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
       <meta name="description" content="Contact - Loriana Zanotti Final Project Home Page"/>
  
@@ -18,12 +18,14 @@
     <header></header>
 
     <main>
-        <form method="post">
-            <label>First Name<input type="text" name="firstName" placeholder="Mary"></label>
-            <label>Last Name<input type="text" name="lastName" placeholder="Smith"></label>
-            <label>Course Title<input type="text" name="courseTitle" placeholder="ICT 4510 Advanced Website Design"></label>
+        <form id="myForm" method="post" data-parsley-validate>
+            <fieldset>
+                <label>First Name<input type="text" name="firstName" placeholder="Mary" required></label>
+                <label>Last Name<input type="text" name="lastName" placeholder="Smith" required></label>
+                <label>Course Title<input type="text" name="courseTitle" placeholder="ICT 4510 Advanced Website Design" required></label>
 
-            <button id="buttonSubmit" type="submit">Submit</button>
+                <button id="buttonSubmit" type="submit">Submit</button>
+            </fieldset>
         </form>
     
         <section id ="results">
@@ -35,6 +37,7 @@
 
     <script type="text/javascript" src="assets/js/localStorageAPI.js"></script>
     <script type="text/javascript" src="assets/js/headerFooter.js"></script>
+    <script src="assets/js/parsley.min.js"></script>
 
   </body>
 </html>

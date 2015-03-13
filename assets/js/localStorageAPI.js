@@ -41,7 +41,7 @@ $(document).ready(function() {
             url: 'http://httpbin.org/post', // the url where we want to POST
             type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
             data: formData, // our data object
-            dataType: 'jsonp'
+            dataType: 'json'
             // encode: true
         })
         // using the done promise callback

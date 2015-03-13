@@ -54,9 +54,8 @@ $(document).ready(function() {
 
 	//footer ip address code
 	$.ajax({
-		type: "GET",
-	    url : "http://httpbin.org/get"
-
+	    url : "http://httpbin.org/get",
+	    type: "GET",
 	})
 	.done(function(response) {
 	  	var results = response.origin;
