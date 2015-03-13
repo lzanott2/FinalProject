@@ -52,10 +52,10 @@ $(document).ready(function() {
 	}
 
 
-	//footer ip address code
+	//footer IP address code
 	$.ajax({
 	    url : "http://httpbin.org/get",
-	    type: "GET",
+	    type: "GET"
 	})
 	.done(function(response) {
 	  	var results = response.origin;
