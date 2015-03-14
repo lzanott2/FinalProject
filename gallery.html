@@ -6,24 +6,46 @@
       <meta name="description" content="Contact - Loriana Zanotti Final Project Gallery"/>
  
       <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-      <link href="assets/css/reset.css" type="text/css" rel="stylesheet"/>
-      <link rel="stylesheet" href="assets/css/final.css"/>
+      <!-- <link href="assets/css/reset.css" type="text/css" rel="stylesheet"/> -->
 
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+
+      <!-- CSS styling for everything but Autocomplete; for the entire website -->
+      <link rel="stylesheet" href="assets/css/initializr.css"/>
+      <link rel="stylesheet" href="assets/css/final.css"/>
+ 
       <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
   </head>
 
 
- <body>
-    <header></header>
+  <body>
+      <div id="header-container">
+          <header class="wrapper clearfix">
+              <h1 id="title">Image Gallery</h1>
+          </header>
+      </div> <!-- end header-container-->
 
-    <main>
-        <section id ="results">
+      <div id="main-container">
+          <div id="main" class="wrapper clearfix">
+              <main>
+                  <article>
+                      <section id ="results"></section> 
+                  </article> 
 
-        </section> 
-    </main>
+                  <aside>
+                      <h3>Nature Pics</h3>
+                      <p>I looked up serene nature on Flickr and this is what I found. Pretty blissful, right? I feel calmer just parusing the page. I hope that you enjoy the gallery too!</p>
+                  </aside>
+              </main>
+          </div> <!-- end wrapper clearfix-->
+      </div>  <!-- end main-container  -->
 
-    <footer></footer>
+      <div id="footer-container">
+          <footer class="wrapper"></footer>
+      </div>
 
     <script type="text/javascript" src="assets/js/flickr.js"></script>
     <script type="text/javascript" src="assets/js/headerFooter.js"></script>

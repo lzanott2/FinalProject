@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Home</title>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-      <meta name="description" content="Contact - Loriana Zanotti Final Project Home Page"/>
- 
-      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-      <link href="assets/css/reset.css" type="text/css" rel="stylesheet"/>
+    <head>
+        <title>Home</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Contact - Loriana Zanotti Final Project Home Page"/>
+   
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <!-- <link href="assets/css/reset.css" type="text/css" rel="stylesheet"/> -->
 
-      <!-- Autocomplete -->
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <!-- end Autocomplete -->
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
 
-      <!-- CSS styling for everything but Autocomplete; for the entire website -->
-      <link rel="stylesheet" href="assets/css/final.css"/>
+        <!-- Autocomplete -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- end Autocomplete -->
 
-      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  </head>
+        <!-- CSS styling for everything but Autocomplete; for the entire website -->
+        <link rel="stylesheet" href="assets/css/initializr.css"/>
+        <link rel="stylesheet" href="assets/css/final.css"/>
 
 
- <body>
-    <header></header>
+        <!--  
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        -->
+    </head>
 
-    <main>
-        <form id="myForm" method="post" data-parsley-validate>
-            <fieldset>
-                <label>First Name<input type="text" name="firstName" placeholder="Mary" required></label>
-                <label>Last Name<input type="text" name="lastName" placeholder="Smith" required></label>
-                <!-- Autocomplete -->
-                <label for="autocomplete">Course Title<input type="text" id="autocomplete" title="type &quot;a&quot;" name="courseTitle" placeholder="ICT 4510 Advanced Website Design" required></label>
-                <button id="buttonSubmit" type="submit">Submit</button>
-            </fieldset>
-        </form>
-    
-        <section id ="results">
 
-        </section> 
-    </main>
+    <body>
 
-    <footer></footer>
+        <div id="header-container">
+            <header class="wrapper clearfix">
+                <h1 id="title">Loriana Amelia</h1>
+            </header>
+        </div> <!-- end header-container-->
 
-    <script type="text/javascript" src="assets/js/localStorageAPI.js"></script>
-    <script type="text/javascript" src="assets/js/headerFooter.js"></script>
-    <script src="assets/js/parsley.min.js"></script>
-    <script>
-        $("#autocomplete").autocomplete({
-            source: [
-                "ICT 4005 Technology Trends",
-                "ICT 4010 Enterprise Architecture",
-                "ICT 4570 JavaScripting",
-                "ICT 4505 Website Design and Management",
-                "ICT 4510 Advanced Website Design",
-                "ICT 4515 Usability Design for Websites",
-                "ICT 4555 Introduction to Flash Platform"  
-            ]
-        });
-  </script>
-  </body>
+        <div id="main-container">
+            <div id="main" class="wrapper clearfix">
+                <main>
+                    <article>
+                        <form id="myForm" method="post" data-parsley-validate>
+                            <fieldset>
+                                <label>First Name: <input type="text" name="firstName" placeholder="Mary" required></label>
+                                <label>Last Name: <input type="text" name="lastName" placeholder="Smith" required></label>
+                                <!-- Autocomplete -->
+                                <label for="autocomplete">Course Title: <input type="text" id="autocomplete" title="type &quot;a&quot;" name="courseTitle" placeholder="ICT 4510 Advanced Website Design" required></label>
+                                <button id="buttonSubmit" type="submit">Submit</button>
+                            </fieldset>
+                        </form>
+
+                        <section id ="results"></section> 
+                    </article> 
+
+                    <aside>
+                        <h3>Welcome!</h3>
+                        <p>Hi, I'm Loriana. I'd love to learn more about you and your student status. So please fill out the form to the left. In addition, click on the links to learn more about my skills, hobbies, and interests.</p>
+                    </aside>
+                </main>
+            </div> <!-- end wrapper clearfix-->
+        </div>  <!-- end main-container  -->
+
+        <div id="footer-container">
+            <footer class="wrapper"></footer>
+        </div>
+
+        <script type="text/javascript" src="assets/js/localStorageAPI.js"></script>
+        <script type="text/javascript" src="assets/js/headerFooter.js"></script>
+        <script src="assets/js/parsley.min.js"></script>
+        <script>
+            $("#autocomplete").autocomplete({
+                source: [
+                    "ICT 4005 Technology Trends",
+                    "ICT 4010 Enterprise Architecture",
+                    "ICT 4570 JavaScripting",
+                    "ICT 4505 Website Design and Management",
+                    "ICT 4510 Advanced Website Design",
+                    "ICT 4515 Usability Design for Websites",
+                    "ICT 4555 Introduction to Flash Platform"  
+                ]
+            });
+        </script>
+    </body>
 </html>
 

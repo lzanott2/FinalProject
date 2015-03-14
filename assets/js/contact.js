@@ -26,19 +26,15 @@ $(document).ready(function() {
 
         // process the form
         $.ajax({
-            url: 'http://httpbin.org/post', // the url where we want to POST
-            type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            data: formData, // our data object
+            url: 'http://httpbin.org/post', 
+            type: 'POST', 
+            data: formData, //our data object
             dataType: 'json'
             // encode: true
         })
         // using the done promise callback
         .done(function(response) {
-
-            // log data to the console so we can see
             console.log(response); 
-
-            // here we will handle errors and validation messages
         });
 
         // stop the form from submitting the normal way and refreshing the page
