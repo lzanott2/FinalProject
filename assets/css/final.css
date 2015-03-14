@@ -20,17 +20,18 @@ p {
 
 /*********** Body ***********/
 body {
-   background-image: url("../images/starpower.jpeg");
    background-size: 100% auto;
    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-::-moz-selection, ::selection { 
-  background: #843900; /*brown*/
+#main-container {
+  background: #FFFFFF  url("../images/starpower.jpeg") no-repeat fixed;
+  opacity: .9;
+  min-height: 463px;
 }
 
-main {
-
+::-moz-selection, ::selection { 
+  background: #843900; /*brown*/
 }
 
 #header-container {
@@ -43,6 +44,10 @@ main {
 
 #header-container, #footer-container, #main aside {
   background: #843900; /*dark brown*/
+}
+
+#footer-container {
+  position: static;
 }
 
 nav {
@@ -117,7 +122,6 @@ input:-ms-input-placeholder {
   width: 300px;
 }
 
-
 article {
 
 }
@@ -154,11 +158,22 @@ aside p {
 
 aside#image {
   border: none;
+  width: 390px;
+  margin-top: 0;
   padding: 0;
 }
 
-aside#image img{
+aside#image img {
   width: 390px;
+}
+
+aside#image iframe {
+  margin-top: 0;
+  padding: 25px 0 0 0;
+}
+
+aside#image p {
+  padding: 0 10px;
 }
 
 footer {
